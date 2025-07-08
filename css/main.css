@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
@@ -6,106 +5,208 @@ html {
     margin: auto;
     /* box-sizing: border-box; */
     /* width: 100rem;  */
-  }
+}
 
-main{
+
+.skip-link {
+    background: #d69e3d;
+    color: black;
+    font-weight: 700;
+    left: -10000px;
+    padding: 1rem;
+    position: absolute;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+main {
     background-color: #f3f0e9;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     background-color: black;
 }
 
 footer {
     background-color: black;
     text-align: center;
-    padding-bottom: 15rem;
-    padding-top: 2rem;
+    padding-bottom: 10rem;
+    padding-top: 5rem;
 
 }
 
 img {
     max-width: 100%;
-    height: auto; 
+    height: auto;
 }
 
-h1, h2, h3, nav {
+h1,
+h2,
+h3,
+nav {
     font-family: 'Lato', sans-serif;
 }
 
-p, button{
+p,
+button {
     font-family: 'Karla', sans-serif;
     font-weight: 400;
 }
 
-button{
+button {
     font-weight: 500;
     font-size: 20px;
 }
 
-h2{
+h2 {
     font-weight: 900;
 }
 
-h3{
+h3 {
     font-weight: 700;
 }
 
 
 
-  @media screen and (max-width: 400px){
+.light-yellow {
+    color: #d69e3d;
+    font-size: 20px;
+}
+
+.offer-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+.offer-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    height: 310px;
+    width: 351px;
+}
+
+.offer-card img {
+    width: 10em;
+}
+
+.offering h2,
+.offering h3 {
+    margin: .25rem;
+    padding-top: .25rem;
+    text-align: center;
+}
+
+.offering h2 {
+    padding-bottom: 1.5rem;
+
+}
+
+.offer-card p {
+    margin: 0;
+    padding: 2% 5% 0;
+    text-align: center;
+    line-height: 25px;
+}
+
+.explore .btn-primary {
+    background-color: white;
+    border-style: none;
+    width: 273px;
+    height: 56px;
+    font-size: larger;
+
+}
+
+.explore .btn-secondary {
+    color: white;
+    background-color: transparent;
+    font-size: larger;
+    border-style: solid;
+    border-color: white;
+    width: 240px;
+    height: 56px;
+}
+
+.btn-tertiary {
+    background-color: black;
+    border-style: none;
+    color: white;
+    width: 203px;
+    height: 56px;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    color: white;
+}
+
+footer hr {
+    width: 90%;
+}
+
+
+
+
+
+@media screen and (max-width: 400px) {
 
     /* FONT SIZES */
-
-    h1{
-       font-size: 32px;
-       text-align: center;
+    h1 {
+        font-size: 32px;
+        text-align: center;
     }
 
-    h2{
+    h2 {
         font-size: 28px;
     }
 
-    h3{
-       font-size: 22px;
+    h3 {
+        font-size: 22px;
     }
 
-    p{
-       font-size: 16px;
+    p {
+        font-size: 16px;
     }
-
-
-
 
     /* HERO SECTION */
     .hero-section {
-        background-color: black;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                            url('/images/hero-background.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 60vh; 
         display: flex;
         flex-direction: column;
         justify-content: center;
+        height: 490px;
+        background-color: black;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/hero-background.jpg');
+        background-size: 108%;
+        background-position: center 100%;
+        background-repeat: no-repeat;
     }
 
-
-    nav ul{
-        list-style-type: none;
-        display: flex;
-    }
     nav a {
         display: inline-block;
         text-decoration: none;
         margin-left: 1em;
-
     }
 
-    .hero p{
+    .hero p {
         line-height: 20px;
         padding: 10px;
         text-align: center;
@@ -137,51 +238,43 @@ h3{
         align-items: center;
         height: 100%;
         color: white;
-    } 
-
-    .light-yellow{
-        color:#d69e3d;
     }
-
 
     .navbar-links {
         display: none;
     }
 
-    .material-symbols-outlined{
-        color: white ;
+    .material-symbols-outlined {
+        color: white;
         font-size: 24px;
         padding: .5rem;
-
     }
-    
-    .hero .btn-primary{
+
+    .hero .btn-primary {
         background-color: white;
         border-style: none;
         padding: .5rem 1rem .5rem 1rem;
         font-size: 20px;
     }
 
-
-
-
     /* WELCOME SECTION */
-
-    .welcome{
+    .welcome {
         padding: 20% 0% 10%;
     }
-    .welcome .light-yellow{
+
+    .welcome .light-yellow {
         text-align: left;
         margin-left: 1rem;
     }
 
-    .welcome h2{
+    .welcome h2 {
         margin-left: 1rem;
     }
 
     .welcome h3 {
-        color:#d69e3d;
+        color: #d69e3d;
     }
+
     .image-block-1 {
         margin: 1em;
     }
@@ -193,10 +286,7 @@ h3{
         margin: 1em;
     }
 
-
-
-
-/* OFERRINGS SECTION */
+    /* OFERRINGS SECTION */
 
     .offering {
         display: flex;
@@ -205,13 +295,11 @@ h3{
         padding-bottom: 1rem;
     }
 
-
-    .offer-card p{
+    .offer-card p {
         margin: 0;
         text-align: center;
         line-height: 25px;
     }
-
 
     .offering {
         display: flex;
@@ -220,67 +308,52 @@ h3{
         text-align: center;
     }
 
-    .offering img{
+    .offering img {
         width: 40%;
         padding-top: 10%;
 
     }
 
-
-    
-
-
-/* EXPLORE SECTION */
-
-    .explore{
+    /* EXPLORE SECTION */
+    .explore {
         display: flex;
         flex-wrap: wrap;
-        text-align: center; 
+        text-align: center;
         color: white;
         padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
+        padding-bottom: 3rem;
     }
-     .explore {   
-        background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                            url('/images/coffee-shop.jpeg');
+
+    .explore {
+        height: 425px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/coffee-shop.jpeg');
         background-size: cover;
-        background-position: center; 
-        /* height: 510px;
-        width: 390px; */
-        justify-content: center;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
-    } 
-
-    .explore-card{
+    .explore-card {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0;
         padding-bottom: .5rem;
     }
-    
-    .explore h2{
-        padding: 0rem 2rem .5rem;
+
+    .explore h2 {
+        margin: 0;
+        padding: 0rem 2rem 1rem;
         font-weight: 700;
         line-height: 32px;
-
-    }
- 
- 
-    .explore h3{
-         margin: 2%;
-         margin-top: 5%;
-         font-size: 20px;
-
     }
 
 
+    .explore h3 {
+        margin-bottom: 0;
+        padding-bottom: 1rem;
+    }
 
-
-
-
-/* ABOUT SECTION */
-
+    /* ABOUT SECTION */
     .about img {
         display: flex;
         margin: auto;
@@ -288,83 +361,74 @@ h3{
         width: 354px;
         height: 354px;
         padding-top: 15%;
-
     }
+
     .about h2,
-    .about h3{
+    .about h3 {
         text-align: left;
         margin-left: 1.25rem;
         margin-bottom: 0%;
-        
     }
 
-    .about h3{
+    .about h3 {
         padding-top: 1rem;
         padding-bottom: .5rem;
         font-size: 20px;
     }
 
-    .about p{
+    .about p {
         text-align: left;
         margin: 1rem 1.25rem;
         line-height: 25px;
     }
-    
-    .btn-tertiary{
-        background-color: black;
-        border-style: none;
-        color: white;
-        padding: 1rem 3rem 1rem 3rem;
+
+    .btn-tertiary {
         margin-left: 1.25rem;
         margin-bottom: 15%;
         margin-top: .5rem;
     }
 
-
-
-/* TESTIMONIALS SECTION */
-
+    /* TESTIMONIALS SECTION */
     .testimonials {
         background-color: black;
         color: white;
         position: relative;
         padding-top: 3rem;
-        
     }
 
     .testimonials-header {
         margin: 1.25rem;
     }
-    
-    .testimonials-header, h2 {
+
+    .testimonials-header,
+    h2 {
         margin: 0;
     }
 
-    .testimonials h3, p{
+    .testimonials h3,
+    p {
         opacity: 80%;
     }
 
-    .testimonials-header{
+    .testimonials-header {
         margin: 1.25rem;
     }
 
-
-
-    .review-cards{
-        margin: 1.25rem ;
+    .review-cards {
+        margin: 1.25rem;
     }
-    .review-card{
+
+    .review-card {
         height: 480px;
         width: 100%;
         margin-top: 2.5rem;
     }
 
-
-    .review-card img{
+    .review-card img {
         width: 350px;
         position: relative;
         height: 100%;
-        opacity: .5 ;
+        opacity: .5;
         object-fit: cover;
     }
 
@@ -382,7 +446,7 @@ h3{
         margin: 0;
     }
 
-   .text-overlay .customer-name h3{ 
+    .text-overlay .customer-name h3 {
         margin-left: 0;
         margin-bottom: 0;
     }
@@ -390,459 +454,410 @@ h3{
     .customer-name {
         margin-top: .5rem;
     }
+}
 
+/* TABLET */
+@media screen and (min-width: 768px) {
 
-    /* FOOTER */
+    /* FONT SIZES */
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
 
-    footer{
+    h2 {
+        font-size: 2.375rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    /* HERO SECTION */
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 600px;
+        background-color: black;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url('/images/hero-background.jpg');
+        background-size: 100%;
+        background-position: center 63%;
+        background-repeat: no-repeat;
+    }
+
+    .logo {
+        margin-top: 1rem;
+        width: 245px;
+    }
+
+    .material-symbols-outlined {
+        color: white;
+        font-size: 24px;
+        padding: .5rem;
+        margin-top: 1rem;
+    }
+
+    hr {
+        display: flex;
+        align-self: center;
+        width: 95%;
+        opacity: 50%;
+        margin: 0;
+        margin-left: 1rem;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0rem 2rem 0rem;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+    nav a {
+        display: inline-block;
+        text-decoration: none;
+        margin-left: 1em;
+    }
+
+    .hero p {
+        line-height: 28px;
+        padding: 0rem 7rem 0rem;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 1.5% 0%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
         color: white;
     }
 
-    footer hr{
-        width: 90%;
+    .navbar-links {
+        display: none;
     }
-} 
 
-/* TABLET */
-@media screen and (min-width: 768px){
-    
-    /* FONT SIZES */
-
-    h1{
-        font-size: 3rem;
-        text-align: center;
-     }
- 
-     h2{
-         font-size: 2.375rem;
-     }
- 
-     h3{
-        font-size: 1.75rem;
-     }
- 
-     p{
-        font-size: 1rem;
-     }
- 
-  /* HERO SECTION */
-  .hero-section {
-    background-color: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                        url('/images/hero-background.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 60vh; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.logo {
-    margin-top: 1rem;
-    width: 245px;
-}
-
-
-.material-symbols-outlined{
-    color: white ;
-    font-size: 24px;
-    padding: .5rem;
-    margin-top: 1rem;
-
-}
-hr {
-    display: flex;
-    align-self: center;
-    width: 95%;
-    opacity: 50%;
-    margin: 0;
-    margin-left: 1rem;
-}
-
-h1 {
-    margin: 0;
-    padding: 0rem 2rem 0rem;
-}
-
-nav ul{
-    list-style-type: none;
-    display: flex;
-}
-nav a {
-    display: inline-block;
-    text-decoration: none;
-    margin-left: 1em;
-
-}
-
-.hero p{
-    line-height: 28px;
-    padding: 0rem 7rem 0rem;
-    text-align: center;
-    font-size: 20px;
-}
-
-
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0% 1.5% 0%;
-}
-
-
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    color: white;
-} 
-
-
-
-
-.navbar-links {
-    display: none;
-}
-
-
-.hero .btn-primary{
-    background-color: white;
-    border-style: none;
-    padding: 1rem 2rem 1rem 2rem;
-    font-size: 20px;
-
-}
-
-
-
-
+    .hero .btn-primary {
+        background-color: white;
+        border-style: none;
+        padding: 1rem 2rem 1rem 2rem;
+        font-size: 20px;
+    }
 
     /* WELCOME SECTION */
-
-    .welcome{
-        padding: 5% 0% 5%;
+    .welcome {
+        margin: 0;
+        padding: 5rem 1.5rem 5rem 1.5rem;
     }
 
-    .welcome h2{
+    .welcome h2 {
         margin: 0;
-        padding-left: 3rem;
-        padding-right: 15rem;
+        padding: 0rem 15rem 1.5rem 0rem;
     }
 
     .welcome h3 {
         font-size: 20px;
         text-align: left;
-        padding-left: 3rem;
-        padding-top: 1rem;
     }
 
-    .grid{
+    .grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 1.5rem;
-     }
-     
+    }
+
     .image-block-1 {
-        padding-right: .75rem; 
-        padding-left: 1.5rem;
+        padding-right: .75rem;
     }
 
     .image-block-2 {
         display: inline-grid;
         grid-template-columns: auto auto;
         gap: 1.25rem;
-        padding-right: 1.5rem; 
         padding-left: .75rem;
     }
 
+    /* OFERRINGS SECTION */
 
-    /* OFEERINGS SECTION */
-    .offer-card p{
-        padding: 0% 5% 0%;
+    /* EXPLORE SECTION */
+    .explore {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
-        line-height: 25px;
+        color: white;
+        padding-top: 3rem;
     }
 
-    .offering .light-yellow h3{
-        margin-left: 0;
+    .explore {
+        justify-content: center;
+        height: 612px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/coffee-shop.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
+    .explore-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding-bottom: 4rem;
+    }
 
-/* EXPLORE SECTION */
+    .explore h2 {
+        margin: 0;
+        padding: 0rem 5rem 1rem;
+    }
 
-.explore{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: white;
-    padding-top: 3rem;
+    .explore h3 {
+        margin: 0;
+        font-size: 20px;
+        padding-bottom: 1rem;
+    }
+
+    /* ABOUT SECTION */
+    .about {
+        padding: 5rem 1.5rem 5rem 1.5rem;
+    }
+
+    .about img {
+        display: flex;
+        margin: 0;
+        object-fit: cover;
+        width: 718px;
+        height: 718px;
+    }
+
+    .about h2,
+    .about h3 {
+        text-align: left;
+        margin: 0;
+        padding-top: .5rem;
+    }
+
+    .about h3 {
+        padding-top: 2rem;
+    }
+
+    .about p {
+        text-align: left;
+        line-height: 26px;
+        padding-bottom: .5rem;
+    }
+
+    /* TESTIMONIALS SECTION */
+    .testimonials {
+        margin: 0;
+        padding: 3rem 1.5rem 0rem 1.5rem;
+        background-color: black;
+        color: white;
+        position: relative;
+    }
+
+    .testimonials-header h2 {
+        margin: 0;
+        padding: 0rem 6rem 0rem 0rem;
+    }
+
+    .testimonials-header,
+    h2 .testimonials h3,
+    .testimonials p {
+        margin: 0;
+        margin: 0;
+        opacity: 80%;
+    }
+
+    .review-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .review-card {
+        height: 480px;
+        width: 360px;
+        margin-top: 1.75rem;
+    }
+
+    .review-card img {
+        width: 360px;
+        height: 100%;
+        position: relative;
+        object-fit: cover;
+        opacity: .5;
+
+    }
+
+    .review-card:nth-child(1) img {
+        width: 318px;
+    }
+
+    .text-overlay {
+        position: relative;
+        top: -145px;
+        z-index: 2;
+        padding-left: 1.25rem;
+        width: 17rem;
+    }
+
+    .text-overlay p {
+        margin: 0;
+        line-height: 1.75rem;
+        text-align: left;
+    }
+
+    .customer-name {
+        margin-top: .5rem;
+    }
+
+    /* FOOTER */
+    footer {
+        color: white;
+    }
+
+    footer hr {
+        margin: auto;
+        width: 90%;
+    }
 }
- .explore {   
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                        url('/images/coffee-shop.jpeg');
-    background-size: cover;
-    background-position: center; 
-    object-fit: cover;
-    height: 612px;
-    justify-content: center;
-
-} 
-
-.explore-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding-bottom: 4rem;
-}
-.explore h2{
-    margin: 0;
-    padding: 0rem 5rem 1rem;
-
-}
-
-.explore h3{
-    margin: 0;
-    font-size: 20px;
-    padding-bottom: 1rem;
-     
-
-}
-
-
-/* ABOUT SECTION */
-
-.about{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 5rem;
-    padding-top: 5rem;
-}
-.about img {
-    display: flex;
-    margin: 0;
-    object-fit: cover;
-    width: 718px;
-    height: 718px;
-
-}
-.about h2,
-.about h3{
-    text-align: left;
-    margin:0;
-    padding-top: .5rem;
-}
-
-.about h3{
-    padding-top: 2rem;
-}
-
-
-.about p{
-    text-align: left;
-    line-height: 26px;
-    padding-bottom: .5rem;
-}
-
-
-
-/* TESTIMONIALS SECTION */
-
-.testimonials {
-    background-color: black;
-    color: white;
-    position: relative;
-    padding-top: 3rem;
-    
-}
-
-.testimonials-header {
-    margin: 1.25rem;
-}
-
-.testimonials-header, h2 {
-    margin: 0;
-}
-
-.testimonials h3, p{
-    opacity: 80%;
-}
-
-.testimonials-header{
-    margin: 1.25rem;
-}
-
-
-
-.review-cards{
-    margin: 1.25rem ;
-}
-.review-card{
-    height: 480px;
-    width: 100%;
-    margin-top: 2.5rem;
-}
-
-
-.review-card img{
-    width: 350px;
-    position: relative;
-    height: 100%;
-    opacity: .5 ;
-    object-fit: cover;
-}
-
-.text-overlay {
-    z-index: 2;
-    position: relative;
-    top: -145px;
-    padding-left: 1.25rem;
-    width: 17rem;
-}
-
-.text-overlay p {
-    line-height: 1.75rem;
-    text-align: left;
-    margin: 0;
-}
-
-.text-overlay .customer-name h3{ 
-    margin-left: 0;
-    margin-bottom: 0;
-}
-
-.customer-name {
-    margin-top: .5rem;
-}
-
-
-
-
-    
-    } 
-
-   
-
-
-
-
-  
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* DESKTOP */
-@media screen and (min-width: 1440px){
-   
+@media screen and (min-width: 1440px) {
+
     /* FONT SIZES */
-
-    h1{
-        font-size: 62px;
+    h1 {
+        font-size: 3.875rem;
         text-align: center;
-     }
- 
-     h2{
-         font-size: 48px;
-     }
- 
-     h3{
-        font-size:32px;
-     }
- 
-     p{
-        font-size: 16px;
-     }
- 
+    }
 
-}
+    h2 {
+        font-size: 3rem;
+    }
 
+    h3 {
+        font-size: 2rem;
+    }
 
-.light-yellow{
-    color:#d69e3d;
-    font-size: 20px;
-}
-.offer-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 4rem;
-}
+    p {
+        font-size: 1rem;
+    }
 
-.offer-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 351px;
-}
+    .hero-section {
+        height: 800px;
+        padding: 0rem 15rem;
+        background-position: center 50%;
+    }
 
-.offer-card img{
-    width: 10em;
-}
+    .hero-section hr {
+        width: 125%;
+    }
 
-.offering h2, 
-.offering h3{
-    margin: .25rem;
-    padding-top: .25rem;
-    text-align: center;
-}
+    .navbar-link {
+        display: show;
+    }
 
-.offering h3{
-    font-size: 20px;
-}
+    .material-symbols-outlined {
+        display: none;
+    }
 
-.offering h2{
-    padding-bottom: 1.5rem;
-}
+    .welcome {
+        padding: 5rem 8rem;
+    }
 
-.explore .btn-primary{
-    background-color: white;
-    border-style: none;
-    width: 273px;
-    height: 56px;
-    font-size: larger;
- 
-}
+    .offering {
+        padding: 2rem 2rem 5rem;
+    }
 
-.explore .btn-secondary{
-    color: white;
-    background-color: transparent;
-    font-size: larger;
-    border-style:solid;
-    border-color: white;
-    width: 240px;
-    height: 56px;
-}
+    .offer-card {
+        width: 380px;
+    }
 
-.btn-tertiary{
-    background-color: black;
-    border-style: none;
-    color: white;
-    width: 203px;
-    height: 56px;
+    .explore {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 499px;
+        background-position: center top;
+    }
+
+    .explore-card {
+        width: 584px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .explore h2 {
+        margin: 0;
+        padding: 0rem 0rem 1rem
+    }
+
+    .about {
+        display: flex;
+        padding: 5rem 5rem;
+
+    }
+
+    .about img {
+        height: 584px;
+        width: 584px;
+    }
+
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        width: 584px;
+        padding: 3rem 0rem 4rem 2rem;
+    }
+
+    .testimonials {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        padding: 6rem 6rem;
+
+    }
+
+    .testimonials-header h2 {
+        margin: 0;
+        padding-right: 40rem;
+    }
+
+    .review-cards {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 1200px
+    }
+
+    .review-card {
+        width: 23.5rem;
+    }
+
+    .review-card:nth-child(1) img {
+        width: 23.5rem;
+    }
+
+    .review-card:nth-child(2) img {
+        width: 23.5rem;
+    }
 }
