@@ -122,7 +122,7 @@ p {
     justify-content: center;
     height: 490px;
     background-color: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero-background.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-background.jpg');
     background-size: 108%;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -281,7 +281,7 @@ header {
     padding-top: 2.5rem;
     padding-bottom: 3rem;
     height: 425px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/coffee-shop.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/coffee-shop.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -476,7 +476,7 @@ footer hr {
         justify-content: center;
         height: 600px;
         background-color: black;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url('/images/hero-background.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url('../images/hero-background.jpg');
         background-size: 100%;
         background-position: center 63%;
         background-repeat: no-repeat;
@@ -593,7 +593,7 @@ footer hr {
         color: white;
         padding: 0;
         height: 612px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/coffee-shop.jpeg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/coffee-shop.jpeg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
